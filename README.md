@@ -1,2 +1,14 @@
 # deep-learning-for-image-processing
 2023-05-03  --提交Test1_official_demo和data_set
+                  ├── Test1_official_demo
+                    ├── model.py（模型文件）  
+                    ├── train.py（调用模型训练）  
+                    ├── predict.py（调用模型进行预测） 
+                    └── data  
+                      └── data数据集
+                                      ├── data_set 
+                                        ├── split_data.py
+                                        └── flower_data   
+                                          ├── flower_photos（解压的数据集文件夹，3670个样本）  
+                                          ├── train（生成的训练集，3306个样本）  
+                                          └── val（生成的验证集，364个样本） 
