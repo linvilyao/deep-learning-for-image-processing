@@ -1,6 +1,5 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 
 # 创建类AlexNet，继承于父类nn.Module
 class AlexNet(nn.Module):
@@ -70,7 +69,7 @@ class AlexNet(nn.Module):
         # 遍历modules模块，modules定义中：返回一个迭代器，迭代器中会遍历网络中所有的模块
         # 换而言之，通过self.modules()，会迭代定义的每一个层结构
         for m in self.modules():
-            # 编列层结构之后，判断属于哪一个类别
+            # 遍历层结构之后，判断属于哪一个类别
             if isinstance(m, nn.Conv2d):
                 nn.init.kaiming_normal_(m.weight, mode="fan_out")
                 # 如果偏置不为0的话，就以0来作为初始化

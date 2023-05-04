@@ -1,11 +1,10 @@
 import os
-import sys
 import json
 import time
 
 import torch
 import torch.nn as nn
-from torchvision import transforms, datasets, utils
+from torchvision import transforms, datasets
 import matplotlib.pyplot as plt
 import numpy as np
 import torch.optim as optim
